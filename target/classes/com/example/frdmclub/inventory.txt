@@ -1,0 +1,4 @@
+1,Fallen Angel,30,Plain,Linen,Gothic,350
+2,Jack of all Trades,88,Plain,Cotton,Abstract,500
+3,Angela,6,djdj,djjd,ksdkdsksd,9
+4,Baste,8,Plain,Cotton,Polka Dots,300

@@ -1,0 +1,5 @@
+wico,wicoAdmin,Wico
+josh,joshAdmin,Josh
+pat,patAdmin,Pat
+nico,nicoAdmin,Nico
+gerard,gerardAdmin,Gerard

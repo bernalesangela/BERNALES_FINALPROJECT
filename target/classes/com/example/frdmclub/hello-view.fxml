@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="942.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frdmclub.HelloController">
+   <children>
+      <AnchorPane prefHeight="540.0" prefWidth="295.0" style="-fx-background-color: #222222;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="710.0" fitWidth="457.0" layoutX="-32.0" layoutY="-1.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@admin_bg.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="productNameInput" layoutX="117.0" layoutY="143.0" />
+            <TextField id="quantity" fx:id="quantityInput" layoutX="117.0" layoutY="193.0" />
+            <TextField id="style" fx:id="styleInput" layoutX="117.0" layoutY="244.0" />
+            <TextField id="material" fx:id="materialInput" layoutX="117.0" layoutY="296.0" />
+            <TextField id="pattern" fx:id="patternInput" layoutX="117.0" layoutY="348.0" />
+            <Button layoutX="154.0" layoutY="462.0" mnemonicParsing="false" onAction="#addItem" prefHeight="26.0" prefWidth="65.0" text="Add">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label layoutX="11.0" layoutY="147.0" text="Product Name" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="43.0" layoutY="198.0" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="53.0" layoutY="248.0" text="Style" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="44.0" layoutY="300.0" text="Material" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="47.0" layoutY="352.0" text="Pattern" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField id="price" fx:id="priceInput" layoutX="117.0" layoutY="403.0" />
+            <Label layoutX="53.0" layoutY="407.0" text="Price" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="110.0" text="Logged in as: " textFill="WHITE">
+               <font>
+                  <Font name="Helvetica" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="loggedInAs" layoutX="116.0" layoutY="107.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="58.0" layoutX="36.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@frdm_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="112.0" layoutY="52.0" text="Freedom Club Apparel" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica Bold" size="15.5" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="463.3333333333333" layoutY="-0.6666666666666666" prefHeight="540.0" prefWidth="647.0" style="-fx-background-color: #f5efeb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="295.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane fx:id="mainGrid" alignment="CENTER" gridLinesVisible="true" layoutX="13.0" layoutY="71.0" prefHeight="433.0" prefWidth="617.0" style="-fx-alignment: center;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="73.0" minWidth="10.0" prefWidth="80.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="8.0" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="32.666680653889976" minHeight="5.0" prefHeight="18.666680653889976" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="76.66665267944336" minHeight="10.0" prefHeight="48.00000254313151" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="93.66666412353516" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="93.99999999999997" minHeight="10.0" prefHeight="73.33332824707031" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="88.00000508626306" minHeight="10.0" prefHeight="71.33329264322919" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="101.00002034505206" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="67.33333333333331" minHeight="10.0" prefHeight="67.33333333333331" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="idHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="ID No.">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="Product Name" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="quantityHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="Quantity" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="styleHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="Style" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="materialHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="Material" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="patternHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="Pattern" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priceHeader" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="Price" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label layoutX="222.0" layoutY="16.0" text="INVENTORY">
+               <font>
+                  <Font name="Helvetica Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
